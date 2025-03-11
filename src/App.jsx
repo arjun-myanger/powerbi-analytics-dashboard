@@ -4,11 +4,13 @@ import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <div className="flex">
+    <div className="flex bg-gray-100 min-h-screen">
       <Sidebar />
       <div className="flex-1">
         <Navbar />
-        <Dashboard />
+        <main className="p-6">
+          <Dashboard />
+        </main>
       </div>
     </div>
   );
